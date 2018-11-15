@@ -37,11 +37,6 @@ html(class=`${large ? 'large' : ''} ${iframe ? 'iframe' : ''} theme-${theme.name
       else
         p Join #[b= name] on Slack.
 
-      if active
-        p.status #[b.active= active] users online now of #[b.total= total] registered.
-      else
-        p.status #[b.total= total] users are registered so far.
-
       form#invite
 
         if channels
